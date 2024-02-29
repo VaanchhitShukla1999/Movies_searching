@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search Website</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      
+
+      <!-- search container -->
+      <div class="search-container" >
+        <div class="search-element">
+          <h3>Search Movie:</h3>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Movie Title ..."
+            id="movie-search-box"
+            onkeyup="findMovies()"
+            onclick="findMovies()"
+          />
+         </div>
+        </div>
+        <button class="show-modal" style="margin-left: 40%;">Myfavourite</button>
+      </div>
+    <!-- modal -->
+    <div class="modal hidden">
+      <button class="modal-btn close-modal">&times;</button>
+    
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- modal end -->
+    <!-- movie app js -->
+    <script
+      src="https://kit.fontawesome.com/52846a34b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
